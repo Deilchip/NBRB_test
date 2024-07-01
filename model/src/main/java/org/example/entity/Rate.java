@@ -1,12 +1,12 @@
 package org.example.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
 import java.util.Date;
 
 @Getter
@@ -15,13 +15,11 @@ import java.util.Date;
 @Entity
 @Table(name = "rates")
 public class Rate {
-
     @Id
     private Long curId;
     private Date date;
     private String curAbbreviation;
-    private int curScale;
+    private Integer curScale;
     private String curName;
-    private double curOfficialRate;
-
+    private Double curOfficialRate;
 }
