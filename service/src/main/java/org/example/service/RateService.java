@@ -1,4 +1,4 @@
-package org.example;
+package org.example.service;
 
 import org.example.dto.RateDTO;
 import org.example.entity.Rate;
@@ -17,12 +17,12 @@ import java.util.stream.Collectors;
 public class RateService {
 
     private final RateRepository rateRepository;
-    @Autowired
     protected ModelMapper modelMapper;
 
     @Autowired
-    public RateService(RateRepository rateRepository) {
+    public RateService(RateRepository rateRepository, ModelMapper modelMapper) {
         this.rateRepository = rateRepository;
+        this.modelMapper = modelMapper;
     }
 
     public List<RateDTO> createRatesByDate(List<RateDTO> ratesDTO) {
@@ -31,7 +31,6 @@ public class RateService {
         Optional<Rate> rateOptional = rateRepository.findByDate(ratesDTO.get(0).getDate());
         if (rateOptional.isEmpty()) {
             ratesDTO.forEach(rateDTO -> ratesToSave.add(modelMapper.map(rateDTO, Rate.class)));
-            rateRepository.saveAll(ratesToSave);
             return rateRepository.saveAll(ratesToSave)
                     .stream()
                     .map(rate -> modelMapper.map(rate, RateDTO.class))

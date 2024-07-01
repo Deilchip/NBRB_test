@@ -6,7 +6,7 @@ import com.google.gson.reflect.TypeToken;
 import org.example.constant.ConstantsController;
 import org.example.dto.RateDTO;
 import org.example.json.DateDeserializer;
-import org.example.RateService;
+import org.example.service.RateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

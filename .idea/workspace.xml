@@ -5,32 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b026e5e0-d74c-411d-a031-da30ac78baf8" name="Changes" comment="all in">
-      <change afterPath="$PROJECT_DIR$/.idea/easycode/codebase-v2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/org/example/handler/CustomExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/src/main/java/org/example/json/DateDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/example/RateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/example/configuration/ServiceConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/example/constants/ConstantsMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/example/constants/ConstantsValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/org/example/validator/RateValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/test/java/org/example/constant/DataConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/test/java/org/example/creator/CreatorObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/test/java/org/example/validator/RateValidatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/test/java/org/example/service/RateServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/test/resources/application-test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/org/example/constant/ConstantsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/org/example/constant/ConstantsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/src/main/java/org/example/controller/RateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/org/example/controller/RateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/src/main/java/org/example/dto/RateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/org/example/dto/RateDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/org/example/entity/Rate.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/org/example/entity/Rate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/repository/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/org/example/repository/RateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/org/example/repository/RateRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/org/example/RateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/org/example/service/RateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/test/java/org/example/validator/RateValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/org/example/validator/RateValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "service",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "19",
     "last_opened_file_path": "C:/Users/User/IdeaProjects/NBRB_test/service/src/test/java/org/example",
     "node.js.detected.package.eslint": "true",
@@ -114,10 +97,11 @@
       <recent name="C:\Users\User\IdeaProjects\NBRB_test\model\src\main\java\org\example" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.service" />
       <recent name="org.example.validator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RateServiceTest">
+  <component name="RunManager" selected="JUnit.RateServiceTest.createRateByDateAndCurrId">
     <configuration name="RateServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <extension name="coverage">
@@ -133,7 +117,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RateServiceTest.testCreateRatesByDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RateServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.RateServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RateServiceTest.createRateByDateAndCurrId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <extension name="coverage">
         <pattern>
@@ -143,13 +142,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.service" />
       <option name="MAIN_CLASS_NAME" value="org.example.service.RateServiceTest" />
-      <option name="METHOD_NAME" value="testCreateRatesByDate(java.util.List)" />
+      <option name="METHOD_NAME" value="createRateByDateAndCurrId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RateValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RateServiceTest.createRatesByDateValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <extension name="coverage">
         <pattern>
@@ -158,13 +157,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.service" />
-      <option name="MAIN_CLASS_NAME" value="org.example.service.RateValidatorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.RateServiceTest" />
+      <option name="METHOD_NAME" value="createRatesByDateValid" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RateValidatorTest.testValidChair" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RateServiceTest.createRatesByDate_whenRatesDoNotExist_shouldSaveAndReturnRates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <extension name="coverage">
         <pattern>
@@ -173,33 +173,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.service" />
-      <option name="MAIN_CLASS_NAME" value="org.example.service.RateValidatorTest" />
-      <option name="METHOD_NAME" value="testValidChair(org.example.dto.RateDTO)" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.RateServiceTest" />
+      <option name="METHOD_NAME" value="createRatesByDate_whenRatesDoNotExist_shouldSaveAndReturnRates" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="controller" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RateServiceTest.createRateByDateAndCurrId" />
+        <item itemvalue="JUnit.RateServiceTest.createRatesByDateValid" />
+        <item itemvalue="JUnit.RateServiceTest.createRatesByDate_whenRatesDoNotExist_shouldSaveAndReturnRates" />
         <item itemvalue="JUnit.RateServiceTest" />
-        <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="JUnit.RateServiceTest.testCreateRatesByDate" />
-        <item itemvalue="JUnit.RateValidatorTest" />
-        <item itemvalue="JUnit.RateValidatorTest.testValidChair" />
+        <item itemvalue="JUnit.RateServiceTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -343,6 +330,11 @@
           <url>file://$PROJECT_DIR$/controller/src/test/java/org/example/controller/RateControllerTest.java</url>
           <line>51</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/src/main/java/org/example/service/RateService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.springframework.beans.factory.BeanCreationException" package="org.springframework.beans.factory" />

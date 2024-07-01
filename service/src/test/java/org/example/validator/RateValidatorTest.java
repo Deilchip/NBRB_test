@@ -27,20 +27,20 @@ public class RateValidatorTest {
     }
 
     private static Stream<Arguments> initValidRate() {
-        RateDTO validChair = CreatorObject.createRateDTO(DataConstants.VALID_CURR_OF_RATE[0],
+        RateDTO validRate = CreatorObject.createRateDTO(DataConstants.VALID_CURR_OF_RATE[0],
                 DataConstants.VALID_CURR_ID[0],
                 DataConstants.VALID_CURR_NAME[0],
                 DataConstants.VALID_CUR_SCALE[0],
                 DataConstants.VALID_CURR_ABBREVIATION[0],
                 DataConstants.VALID_DATES[0]);
-        RateDTO validChairFirst = CreatorObject.createRateDTO(DataConstants.VALID_CURR_OF_RATE[1],
+        RateDTO validRateFirst = CreatorObject.createRateDTO(DataConstants.VALID_CURR_OF_RATE[1],
                 DataConstants.VALID_CURR_ID[1],
                 DataConstants.VALID_CURR_NAME[1],
                 DataConstants.VALID_CUR_SCALE[1],
                 DataConstants.VALID_CURR_ABBREVIATION[1],
                 DataConstants.VALID_DATES[1]);
-        return Stream.of(Arguments.of(validChair),
-                Arguments.of(validChairFirst));
+        return Stream.of(Arguments.of(validRate),
+                Arguments.of(validRateFirst));
     }
 
     private static Stream<Arguments> initInvalidRate() {
